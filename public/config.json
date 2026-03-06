@@ -1,0 +1,11 @@
+{
+  "krokiEndpoint": "https://kroki.io",
+  "diagramOptions": {
+    "structurizr": {
+      "active": true
+    },
+    "mermaid": {
+      "active": true
+    }
+  }
+}
