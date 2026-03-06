@@ -1,3 +1,6 @@
+# Ignore samples folder
+/samples
+
 # Ignore auto generated pdfs  
 /pdf 
 
