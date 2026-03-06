@@ -16,11 +16,8 @@ This project is intended for ArcGIS Enterprise administrators and architects who
 
 Once deployed, you can try the app online at:
 
-`https://<your-github-username-or-org>.github.io/<your-repo-name>/`
+`[https://phaakma.github.io/ae-asbuilt-generator/](https://phaakma.github.io/ae-asbuilt-generator/)`
 
-Example:
-
-`https://acme-org.github.io/ae-asbuilt-tool/`
 
 ## Tech Stack
 
