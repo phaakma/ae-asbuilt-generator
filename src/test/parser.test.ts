@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import sample1 from "../../sample1.json";
-import sample2 from "../../sample2.json";
+import sample1 from "../../samples/sample1.json";
+import sample2 from "../../samples/sample2.json";
 import { parseArcGisReport } from "@/parsers/arcgis-report-parser";
 import { normalizeReport } from "@/parsers/normalize";
 

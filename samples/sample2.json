@@ -1,0 +1,311 @@
+{"siteMap": {
+    "summary": {
+        "portal": [{
+            "machines": ["PORTAL.SAMPLE.FOO.BAR"],
+            "totalCpu": 4,
+            "totalRam": 12287
+        }],
+        "servers": [
+            {
+                "machines": ["INTERNAL.SAMPLE.FOO.BAR"],
+                "totalCpu": 8,
+                "totalRam": 32767,
+                "siteRole": "FEDERATED_SERVER"
+            },
+            {
+                "machines": ["AGOL.SAMPLE.FOO.BAR"],
+                "totalCpu": 4,
+                "totalRam": 16383,
+                "siteRole": "FEDERATED_SERVER"
+            },
+            {
+                "machines": ["EXTERNAL.SAMPLE.FOO.BAR"],
+                "totalCpu": 8,
+                "totalRam": 24575,
+                "siteRole": "HOSTING_SERVER"
+            },
+            {
+                "machines": ["LIM.SAMPLE.FOO.BAR"],
+                "totalCpu": 4,
+                "totalRam": 16383,
+                "siteRole": "FEDERATED_SERVER"
+            }
+        ],
+        "dataStores": [
+            {
+                "machines": ["DATASTORE.SAMPLE.FOO.BAR"],
+                "totalCpu": 4,
+                "totalRam": 16383,
+                "store": "objectStore"
+            },
+            {
+                "machines": ["DATASTORE.SAMPLE.FOO.BAR"],
+                "totalCpu": 4,
+                "totalRam": 16383,
+                "store": "relational"
+            }
+        ]
+    },
+    "portal": {
+        "lastUpdated": 1771700717881,
+        "organizationUrl": "https://maps.foo.bar/portal",
+        "currentBuild": "56755",
+        "currentVersion": "11.5.0",
+        "machines": [{
+            "machineName": "PORTAL.SAMPLE.FOO.BAR",
+            "adminURL": "https://PORTAL.SAMPLE.FOO.BAR:7443/arcgis",
+            "role": "",
+            "webServerCertificateAlias": "portal",
+            "hardware": {
+                "os": "Microsoft Windows Server 2016 build 14393",
+                "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz\n 4 physical CPU package(s)\n 4 physical CPU core(s)\n 4 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                "systemMemoryMB": 12287,
+                "systemMemoryAvailableMB": 4587,
+                "numPhysicalProcessors": 4,
+                "numLogicalProcessors": 4,
+                "localDiskUsage": [
+                    {
+                        "mount": "C:\\",
+                        "diskTotalSpaceGB": 99,
+                        "diskUsableSpaceGB": 32,
+                        "exceededDiskSpaceThreshold": false,
+                        "directory": "INSTALL",
+                        "path": "C:\\Program Files\\ArcGIS\\Portal\\"
+                    },
+                    {
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 99,
+                        "diskUsableSpaceGB": 63,
+                        "exceededDiskSpaceThreshold": false,
+                        "directory": "TEMP",
+                        "path": "D:\\arcgisportal\\temp"
+                    },
+                    {
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 99,
+                        "diskUsableSpaceGB": 63,
+                        "exceededDiskSpaceThreshold": false,
+                        "directory": "CONTENT",
+                        "path": "D:\\arcgisportal\\content"
+                    },
+                    {
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 99,
+                        "diskUsableSpaceGB": 63,
+                        "exceededDiskSpaceThreshold": false,
+                        "directory": "INDEX",
+                        "path": "D:\\arcgisportal\\index"
+                    },
+                    {
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 99,
+                        "diskUsableSpaceGB": 63,
+                        "exceededDiskSpaceThreshold": false,
+                        "directory": "DB",
+                        "path": "D:\\arcgisportal\\db"
+                    }
+                ]
+            }
+        }],
+        "licenses": {
+            "currentRegisteredMembers": 96,
+            "maximumRegisteredMembers": 510,
+            "version": "11.5",
+            "userTypes": [ ],
+            "appBundles": [],
+            "apps": [],
+            "extensions": [],
+            "portalCapabilities": []
+        }
+    },
+    "serverSites": [
+        {
+            "lastUpdated": 1771699660598,
+            "serverId": "obn1adrEjSp3cbG2",
+            "webContextUrl": "",
+            "siteUrl": "https://maps.foo.bar/arcgisext",
+            "serverType": "ArcGIS",
+            "serverRole": "FEDERATED_SERVER",
+            "serverFunction": "",
+            "currentBuild": "56755",
+            "currentVersion": "11.5.0",
+            "machines": [{
+                "machineName": "EXTERNAL.SAMPLE.FOO.BAR",
+                "adminURL": "https://EXTERNAL.SAMPLE.FOO.BAR:6443/arcgis/admin",
+                "webServerCertificateAlias": "SelfSignedCertificate",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz\n 8 physical CPU package(s)\n 8 physical CPU core(s)\n 8 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 32767,
+                    "systemMemoryAvailableMB": 18620,
+                    "numPhysicalProcessors": 8,
+                    "numLogicalProcessors": 8,
+                    "localDiskUsage": [{
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 499,
+                        "diskUsableSpaceGB": 489
+                    }]
+                },
+                "licenses": {
+                }
+            }]
+        },
+        {
+            "lastUpdated": 1771699900309,
+            "serverId": "1SX96GHyaexksiqp",
+            "webContextUrl": "",
+            "siteUrl": "https://maps.foo.bar/agol",
+            "serverType": "ArcGIS",
+            "serverRole": "FEDERATED_SERVER",
+            "serverFunction": "",
+            "currentBuild": "56755",
+            "currentVersion": "11.5.0",
+            "machines": [{
+                "machineName": "AGOL.SAMPLE.FOO.BAR",
+                "adminURL": "https://AGOL.SAMPLE.FOO.BAR:6443/arcgis/admin",
+                "webServerCertificateAlias": "SelfSignedCertificate",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Silver 4210 CPU @ 2.20GHz\n 4 physical CPU package(s)\n 4 physical CPU core(s)\n 4 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 16383,
+                    "systemMemoryAvailableMB": 8970,
+                    "numPhysicalProcessors": 4,
+                    "numLogicalProcessors": 4,
+                    "localDiskUsage": [{
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 499,
+                        "diskUsableSpaceGB": 485
+                    }]
+                },
+                "licenses": { }
+            }]
+        },
+        {
+            "lastUpdated": 1771699892399,
+            "serverId": "ZaJfRWBSBNEI9KFU",
+            "webContextUrl": "",
+            "siteUrl": "https://maps.foo.bar/arcgis",
+            "serverType": "ArcGIS",
+            "serverRole": "HOSTING_SERVER",
+            "serverFunction": "",
+            "currentBuild": "56755",
+            "currentVersion": "11.5.0",
+            "machines": [{
+                "machineName": "INTERNAL.SAMPLE.FOO.BAR",
+                "adminURL": "https://INTERNAL.SAMPLE.FOO.BAR:6443/arcgis/admin",
+                "webServerCertificateAlias": "SelfSignedCertificate",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz\n 1 physical CPU package(s)\n 8 physical CPU core(s)\n 8 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 1F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 24575,
+                    "systemMemoryAvailableMB": 6259,
+                    "numPhysicalProcessors": 8,
+                    "numLogicalProcessors": 8,
+                    "localDiskUsage": [{
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 499,
+                        "diskUsableSpaceGB": 427
+                    }]
+                },
+                "licenses": { }
+            }]
+        },
+        {
+            "lastUpdated": 1771699899960,
+            "serverId": "pDTIXbAEIhyOM1lg",
+            "webContextUrl": "",
+            "siteUrl": "https://maps.foo.bar/arcgispimlim",
+            "serverType": "ArcGIS",
+            "serverRole": "FEDERATED_SERVER",
+            "serverFunction": "",
+            "currentBuild": "56755",
+            "currentVersion": "11.5.0",
+            "machines": [{
+                "machineName": "LIM.SAMPLE.FOO.BAR",
+                "adminURL": "https://LIM.SAMPLE.FOO.BAR:6443/arcgis/admin",
+                "webServerCertificateAlias": "SelfSignedCertificate",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz\n 4 physical CPU package(s)\n 4 physical CPU core(s)\n 4 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 16383,
+                    "systemMemoryAvailableMB": 8525,
+                    "numPhysicalProcessors": 4,
+                    "numLogicalProcessors": 4,
+                    "localDiskUsage": [{
+                        "mount": "D:\\",
+                        "diskTotalSpaceGB": 499,
+                        "diskUsableSpaceGB": 485
+                    }]
+                },
+                "licenses": { }
+            }]
+        }
+    ],
+    "dataStores": [
+        {
+            "store": "objectStore",
+            "currentVersion": "11.5.0",
+            "currentBuild": "56755",
+            "machines": [{
+                "machineName": "DATASTORE.SAMPLE.FOO.BAR",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz\n 4 physical CPU package(s)\n 4 physical CPU core(s)\n 4 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 16383,
+                    "systemMemoryAvailableMB": 8502,
+                    "numPhysicalProcessors": 4,
+                    "numLogicalProcessors": 4,
+                    "localDiskUsage": [
+                        {
+                            "diskTotalSpaceGB": 79,
+                            "diskUsableSpaceGB": 45,
+                            "exceededDiskSpaceThreshold": false,
+                            "directory": "install",
+                            "path": "C:\\Program Files\\ArcGIS\\DataStore\\"
+                        },
+                        {
+                            "diskTotalSpaceGB": 59,
+                            "diskUsableSpaceGB": 43,
+                            "exceededDiskSpaceThreshold": false,
+                            "directory": "dataDirectory",
+                            "path": "D:\\arcgisdatastore\\"
+                        }
+                    ]
+                }
+            }]
+        },
+        {
+            "store": "relational",
+            "currentVersion": "11.5.0",
+            "currentBuild": "56755",
+            "machines": [{
+                "machineName": "DATASTORE.SAMPLE.FOO.BAR",
+                "hardware": {
+                    "cpu": "Intel(R) Xeon(R) Silver 4110 CPU @ 2.10GHz\n 4 physical CPU package(s)\n 4 physical CPU core(s)\n 4 logical CPU(s)\nIdentifier: Intel64 Family 6 Model 63 Stepping 0\nProcessorID: 0F8BFBFF000306F0\nMicroarchitecture: Haswell (Server)",
+                    "os": "Microsoft Windows Server 2016 build 14393",
+                    "systemMemoryMB": 16383,
+                    "systemMemoryAvailableMB": 8499,
+                    "numPhysicalProcessors": 4,
+                    "numLogicalProcessors": 4,
+                    "localDiskUsage": [
+                        {
+                            "diskTotalSpaceGB": 79,
+                            "diskUsableSpaceGB": 45,
+                            "exceededDiskSpaceThreshold": false,
+                            "directory": "install",
+                            "path": "C:\\Program Files\\ArcGIS\\DataStore\\"
+                        },
+                        {
+                            "diskTotalSpaceGB": 59,
+                            "diskUsableSpaceGB": 43,
+                            "exceededDiskSpaceThreshold": false,
+                            "directory": "dataDirectory",
+                            "path": "D:\\arcgisdatastore\\"
+                        }
+                    ]
+                }
+            }]
+        }
+    ],
+    "redacted": false
+}}
