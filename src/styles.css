@@ -192,6 +192,32 @@ body {
   background-color: #fff;
 }
 
+.input-panel__upload-label input[type="file"]::file-selector-button,
+.input-panel__upload-label input[type="file"]::-webkit-file-upload-button {
+  margin-right: 12px;
+  border: 1px solid #007ac2;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #007ac2;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+.input-panel__upload-label input[type="file"]:hover::file-selector-button,
+.input-panel__upload-label input[type="file"]:hover::-webkit-file-upload-button {
+  background: #f0f8ff;
+}
+
+.input-panel__upload-label input[type="file"]:focus-visible::file-selector-button,
+.input-panel__upload-label input[type="file"]:focus-visible::-webkit-file-upload-button {
+  outline: 2px solid #007ac2;
+  outline-offset: 1px;
+}
+
 .json-editor__header {
   display: flex;
   align-items: center;
